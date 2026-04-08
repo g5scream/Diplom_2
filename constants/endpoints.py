@@ -8,7 +8,7 @@ class Endpoints:
     USER = f"{BASE_URL}/api/auth/user"                     # GET, PATCH, DELETE
     TOKEN_UPDATE = f"{BASE_URL}/api/auth/token"            # POST
 
-    INGRDIENTS = f"{BASE_URL}/api/ingredients"             # GET
+    INGREDIENTS = f"{BASE_URL}/api/ingredients"             # GET
 
     CREATE_ORDER  = f"{BASE_URL}/api/orders"               # POST
     ORDER = f"{BASE_URL}/api/orders/all"                   # GET
