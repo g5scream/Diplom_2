@@ -1,0 +1,1 @@
+{"success":true,"user":{"email":"natashawright.7907671@yandex.ru","name":"Edward"},"accessToken":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDU5YTBlOTg0MjcwMDAxYmU3YzIzNiIsImlhdCI6MTc3NTYwNjI4NiwiZXhwIjoxNzc1NjA3NDg2fQ.OBTf3d074opCV1eyDEQ1Cu3gZoZJoDBwQ4QQmPaydO8","refreshToken":"d80558a0073cb28f72b21d8f1818bb371048b7dd4f77e4dcc504ba886de5d51368d9ad1ebdfb2ab0"}
