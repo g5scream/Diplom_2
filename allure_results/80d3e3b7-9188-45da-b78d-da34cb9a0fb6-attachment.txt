@@ -1,0 +1,1 @@
+{"success":true,"user":{"email":"thomas77.5612247@yandex.ru","name":"Lisa"},"accessToken":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGI1MGJmOTg0MjcwMDAxYmU3ZmMzYyIsImlhdCI6MTc3NTk4MDczNSwiZXhwIjoxNzc1OTgxOTM1fQ.ev4Xfg7G9-rh638e0GxgkpyZtDUdgtYVbgsy6BkRpdY","refreshToken":"2c24f2a0be1954cdd47c043c24197558968a3a8d8b210eb7bb4a1ffb796932b59cef0907a51006b7"}

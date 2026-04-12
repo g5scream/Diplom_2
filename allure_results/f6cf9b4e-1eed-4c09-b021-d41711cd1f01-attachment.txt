@@ -1,1 +1,0 @@
-{"success":true,"accessToken":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDU5YTExOTg0MjcwMDAxYmU3YzIzOCIsImlhdCI6MTc3NTYwNjI5MCwiZXhwIjoxNzc1NjA3NDkwfQ.xu9kBZQC7zB9voLasxgYKtK8sY1qlnP35HL-J-lh2_A","refreshToken":"b8e277611c4db2ee3f7e815247b195fd2c6613ab277c84c0ed6e67b9c24074f4ce41f6bd86662543","user":{"email":"linda77.8420530@yandex.ru","name":"Keith"}}

@@ -1,0 +1,1 @@
+{"success":true,"accessToken":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGI1MGMyOTg0MjcwMDAxYmU3ZmMzZSIsImlhdCI6MTc3NTk4MDczOCwiZXhwIjoxNzc1OTgxOTM4fQ.H_EsA5eZrtyWIeURBMqzB1RD1QaTkO2a6R04rWnDDS4","refreshToken":"b84dee0395a024d5cd6a6ce7fe79317f1000f326e4ac487a06eea310769fc0c545c77540d342387b","user":{"email":"dominiquespencer.93488@yandex.ru","name":"Erin"}}

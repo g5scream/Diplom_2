@@ -1,1 +1,0 @@
-{"success":true,"user":{"email":"leblancpatricia.9808806@yandex.ru","name":"Jacqueline"},"accessToken":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDU5YTBiOTg0MjcwMDAxYmU3YzIzMiIsImlhdCI6MTc3NTYwNjI4MywiZXhwIjoxNzc1NjA3NDgzfQ.ixIRb-n57phGylwsaUGbjZAg1b7e36kBXVtXbFZ5WyA","refreshToken":"07458c7310c1197330f5eab654accca19cdb5383d537821d3c13d031502aa6bf1b13d5b727bdf6c3"}

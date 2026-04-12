@@ -1,0 +1,1 @@
+{"success":true,"user":{"email":"yburton.2763089@yandex.ru","name":"Rhonda"},"accessToken":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGI1MGI5OTg0MjcwMDAxYmU3ZmMzNiIsImlhdCI6MTc3NTk4MDcyOSwiZXhwIjoxNzc1OTgxOTI5fQ.9zAzQXI_xnyjjlk-8lWW6CXJ7igi3QYaPNwUbWQbH20","refreshToken":"fb9cda21175f18742d4e62cce8e77287ed9899414d1a23468b3b5450a2ccd39297abea69f8b2d588"}

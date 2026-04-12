@@ -1,0 +1,1 @@
+{"success":true,"user":{"email":"jeff91.92509@yandex.ru","name":"Mary"},"accessToken":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGI1MGJkOTg0MjcwMDAxYmU3ZmMzYSIsImlhdCI6MTc3NTk4MDczMywiZXhwIjoxNzc1OTgxOTMzfQ.AnvaGnurI95On7adcYOAkL6Z7eJfm0B6iNk-P0F_jxk","refreshToken":"6abdfe215b777947469cd022bac300873b6e191510ca3c7b905a25473001396d969709440b541455"}

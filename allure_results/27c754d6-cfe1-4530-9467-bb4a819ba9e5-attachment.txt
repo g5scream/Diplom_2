@@ -1,1 +1,0 @@
-{"success":true,"user":{"email":"hramirez.3575610@yandex.ru","name":"Emily"},"accessToken":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZDU5YTAzOTg0MjcwMDAxYmU3YzIyZCIsImlhdCI6MTc3NTYwNjI3NSwiZXhwIjoxNzc1NjA3NDc1fQ.HsKlFiuHpDR92bjyIkhObQxDKsP79q5UChsvWvZGvYg","refreshToken":"323cb77f5da4b426dccab5e333821ed520de515fb24ae33e892dd190f13ccb085d5fff1214f7627a"}
