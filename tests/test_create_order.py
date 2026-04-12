@@ -2,6 +2,7 @@ import allure
 from constants.api_constants import StatusCode, TextResponse
 from helpers.user_api import *
 from helpers.order_api import create_order, get_random_ingredients
+from helpers.data import generate_user 
 
 
 @allure.suite('Создание заказа')
@@ -9,12 +10,12 @@ class TestOrderCreate:
 
     @allure.feature("Создание заказа")
     @allure.title("Создание заказа с авторизацией и ингредиентами")
-    def test_create_order_with_auth_and_ingredients(self, create_user, ingredient_ids):
+    def test_create_order_with_auth_and_ingredients(self, clean_user_after_test, ingredient_ids):
         order_ingredients = [ingredient_ids[0], ingredient_ids[1], ingredient_ids[2]]
 
         with allure.step("Попытка создания заказа с авторизацией"):
             response = create_order(
-                create_user["accessToken"],
+                clean_user_after_test["accessToken"],
                 order_ingredients
             )
             allure.attach(
@@ -27,7 +28,7 @@ class TestOrderCreate:
         assert (
             response.status_code == StatusCode.HTTP_200_OK and
             response_data.get("success") is True and
-            response_data["order"]["owner"]["name"] == create_user["user"]["name"]
+            response_data["order"]["owner"]["name"] == clean_user_after_test["user"]["name"]
         )
     
     @allure.feature("Создание заказа")
@@ -49,9 +50,9 @@ class TestOrderCreate:
 
     @allure.feature("Создание заказа")
     @allure.title("Создание заказа без ингредиентов")
-    def test_create_order_without_ingredients(self, create_user):
+    def test_create_order_without_ingredients(self, clean_user_after_test):
         with allure.step("Попытка создания заказа без ингредиентов"):
-            response = create_order(create_user["accessToken"], [])
+            response = create_order(clean_user_after_test["accessToken"], [])
             allure.attach(
                 body=response.text,
                 name="Ответ сервера при создании заказа без ингредиентов",
@@ -67,11 +68,11 @@ class TestOrderCreate:
 
     @allure.feature("Создание заказа")
     @allure.title("Создание заказа с неверным хэшем ингредиентов")
-    def test_create_order_with_invalid_hash(self, create_user) -> None:
+    def test_create_order_with_invalid_hash(self, clean_user_after_test) -> None:
         invalid_ingredient = get_random_ingredients(1)[0] + '1'
         with allure.step("Попытка создания заказа с неверным хэшем ингредиента"):
             response = create_order(
-                create_user["accessToken"],
+                clean_user_after_test["accessToken"],
                 [invalid_ingredient]
             )
             allure.attach(
@@ -82,4 +83,3 @@ class TestOrderCreate:
 
         status_code = response.status_code
         assert status_code == 500
-

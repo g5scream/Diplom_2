@@ -1,7 +1,7 @@
 import pytest
 import allure
 from constants.api_constants import StatusCode, TextResponse
-from helpers.user_api import register_user
+from helpers.user_api import register_user, delete_user
 from helpers.data import generate_user
 
 
@@ -10,26 +10,48 @@ class TestUserCreate:
 
     @allure.feature("Регистрация пользователей")
     @allure.title("Создать уникального пользователя")
-    def test_register_unique_user(self, create_user):
-        user_data = create_user
-        
+    def test_register_unique_user(self):
+        user_data = generate_user(is_random=True) # Генерация данных для нового пользователя
+        with allure.step("Отправка запроса на регистрацию пользователя"): # логирование с этапа запроса
+            response = register_user(
+                email=user_data["email"],
+                password=user_data["password"],
+                name=user_data["name"]
+            )
+
+            allure.attach(
+                body=response.text,
+                name="Ответ сервера при регистрации",
+                attachment_type=allure.attachment_type.TEXT
+            )
+        response_data = response.json()
+
         with allure.step("Проверка данных созданного пользователя"):
             allure.attach(
-                body=str(user_data),
+                body=str(response_data),
                 name="Данные созданного пользователя",
                 attachment_type=allure.attachment_type.TEXT
             )
-            
+
             assert (
-                user_data.get("success") is True and
-                "accessToken" in user_data and
-                "refreshToken" in user_data
+                response_data.get("success") is True and
+                "accessToken" in response_data and
+                "refreshToken" in response_data
             )
+
+        with allure.step("Удаление созданного тестового пользователя"):
+            if "accessToken" in response_data:
+                delete_response = delete_user(response_data["accessToken"])
+                allure.attach(
+                    body=delete_response.text,
+                    name="Ответ сервера при удалении",
+                    attachment_type=allure.attachment_type.TEXT
+                )
 
     @allure.feature("Регистрация пользователей")
     @allure.title("Проверить повторную регистрацию существующего пользователя")
-    def test_existing_user_registration(self, create_user):
-        created_user = create_user
+    def test_existing_user_registration(self, clean_user_after_test):
+        created_user = clean_user_after_test
         with allure.step("Попытка повторной регистрации существующего пользователя"): # пытаемся зарегистрировать его повторно
             response = register_user(
                 created_user["user"]["email"],

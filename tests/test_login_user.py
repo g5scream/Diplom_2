@@ -8,9 +8,9 @@ class TestLoginUser:
 
     @allure.feature("Авторизация пользователей")
     @allure.title("Успешная авторизация зарегистрированного пользователя")
-    def test_successful_login(self, create_user):
-        user_email = create_user["user"]["email"]
-        user_password = create_user["password"]
+    def test_successful_login(self, clean_user_after_test):
+        user_email = clean_user_after_test["user"]["email"]
+        user_password = clean_user_after_test["password"]
 
         with allure.step("Попытка успешного входа"):
             login_response = login_user(user_email, user_password)
@@ -48,3 +48,4 @@ class TestLoginUser:
                 response.status_code == StatusCode.UNAUTH and
                 response.json().get("message") == TextResponse.INVALID_CREDENTIALS
             )
+            

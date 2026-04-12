@@ -11,6 +11,7 @@
 ## Структура проекта
 
     Diplom_2/
+        ├── allure_results/             # Отчет
         ├── constants/                  # Константы: коды ответов, эндпоинты
         │   ├── api_constants.py
         │   └── endpoints.py
