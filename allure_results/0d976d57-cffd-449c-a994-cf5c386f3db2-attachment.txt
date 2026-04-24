@@ -1,0 +1,1 @@
+{'email': 'myersroger.7793751@yandex.ru', 'password': '$1F9a$', 'name': 'Christopher'}

@@ -1,0 +1,1 @@
+{"success":true,"user":{"email":"kerryblair.7124529@yandex.ru","name":"Michael"},"accessToken":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGI1MGJiOTg0MjcwMDAxYmU3ZmMzOCIsImlhdCI6MTc3NTk4MDczMSwiZXhwIjoxNzc1OTgxOTMxfQ.Yp-HELZQawYm0HuHG20wfnp35rEDKmPHK1jv-bOYFFo","refreshToken":"1433dbbf620f90f81c5ea00fe010dd2d5e265c23def7746ae3da467155c898f9f974a9bef25747bb"}

@@ -1,0 +1,1 @@
+{"success":true,"user":{"email":"dominiquespencer.93488@yandex.ru","name":"Erin"},"accessToken":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5ZGI1MGMyOTg0MjcwMDAxYmU3ZmMzZSIsImlhdCI6MTc3NTk4MDczOCwiZXhwIjoxNzc1OTgxOTM4fQ.H_EsA5eZrtyWIeURBMqzB1RD1QaTkO2a6R04rWnDDS4","refreshToken":"b2a3b2e84e7bf526ed0cb4500c96452019ae39e56d1374e0d28ce47b5b5618c331cbb085e2b33deb"}
